@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>neeTee</title>
+
+</head>
+<link rel="stylesheet" href="css/animate.css" type="text/css"  />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css"  />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css"  />
+<body>
+<div class="menu-section">
+  <div class="menu-toggle">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+  <nav>
+		<ul role="navigation" class="hidden">
+			<li><a href="" id="home" class="glitched">home</a></li>
+    <li><a href="" id="contact">contact</a></li>
+    <li><a href="" id="works" >works</a></li>
+    <li><a href="" id="about" >about</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="layer"></div>
+
+<div class="cover">
+
+  <header class="header">
+	<h1 class="glitched">HUNटER</h1>
+</header>
+  <div class="desk">
+    <ul>
+    <li><a href="" id="home" class="glitched">home</a></li>
+    <li><a href="" id="contact">contact</a></li>
+    <li><a href="" id="works" >works</a></li>
+    <li><a href="" id="about" >about</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    
+
+    <div class="content">
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+	$("header").append("<div class='glitch-window'></div>");
+//fill div with clone of real header
+$( "h1.glitched" ).clone().appendTo( ".glitch-window" );
+$(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $('.menu-section').toggleClass("on");
+  $("nav ul").toggleClass('hidden');
+});
+</script>
+</body>
+</html>
+
+
+
+<!-- colors to be used
+#1abc9c
+#2c3e50
+#d35400
+#27ae60
+#ffcb65
+#7f8c8d
+#2980b9
+
+-->
