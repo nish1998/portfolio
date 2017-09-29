@@ -7,6 +7,12 @@ body {
   background: #F9F8F8;
   background-image: url("../giphy.webp");
 }
+.element{
+  color:white;
+  font-size: 50px;
+  text-align: center;
+}
+
 .layer {
     background-color: rgba(0,0,0, 0.5);
     position: absolute;
@@ -25,11 +31,11 @@ header.header {
           transform: translateY(-50%);
 }
 header.header h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   color: #FA1D2F	;
   text-align: center;
   margin-top: 0;
-  text-transform: uppercase;
+  
   font-weight: 900;
 }
 
@@ -159,6 +165,8 @@ nav ul {
   margin-top: 50px;
   display: block;
   font-size: 60px;
+  
+
 }
 nav ul.hidden {
 
@@ -257,6 +265,11 @@ li a:hover {
 @media only screen  and (max-width: 700px){
 .desk{
 	display: none;
+}
+.element{
+  color:white;
+  font-size: 30px;
+  text-align: center;
 }
 }
 

@@ -12,6 +12,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src='typed.min.js'></script>
 <link rel="stylesheet" href="css/style.css" type="text/css"  />
 <body>
 <div class="menu-section">
@@ -34,7 +35,8 @@
 <div class="cover">
 
   <header class="header">
-	<h1 class="glitched">HUNटER</h1>
+	<h1 class="glitched animated flash">hunटer</h1>
+	<div class="element"></div>
 </header>
   <div class="desk">
     <ul>
@@ -63,6 +65,15 @@ $(".menu-toggle").on('click', function() {
   $('.menu-section').toggleClass("on");
   $("nav ul").toggleClass('hidden');
 });
+
+
+var typed = new Typed('.element', {
+  strings: ["I'm a Web Developer.", "I'm a Web Designer.","I'm Nishant."],
+  typeSpeed: 50,
+  backSpeed: 25,
+  backDelay: 500
+});
+
 </script>
 </body>
 </html>
