@@ -79,17 +79,17 @@ $(".menu-toggle").on('click', function() {
 });
 
 
-var typed = new Typed('.element', {
+
+$(window).on('load', function() { // makes sure the whole site is loaded 
+            
+            $('.preloader').fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            var typed = new Typed('.element', {
   strings: ["I'm a Web Developer.", "I'm a Web Designer.","I'm Nishant."],
   typeSpeed: 50,
   backSpeed: 25,
   backDelay: 500
 });
 
-$(window).on('load', function() { // makes sure the whole site is loaded 
-            
-            $('.preloader').fadeOut('slow'); // will fade out the white DIV that covers the website. 
-            
           })
 </script>
 </body>
