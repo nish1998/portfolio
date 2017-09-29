@@ -15,6 +15,18 @@
 <script src='typed.min.js'></script>
 <link rel="stylesheet" href="css/style.css" type="text/css"  />
 <body>
+
+<div class="preloader">
+<div class="spinner">
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+</div>
+
+
 <div class="menu-section">
   <div class="menu-toggle">
     <div class="one"></div>
@@ -74,6 +86,11 @@ var typed = new Typed('.element', {
   backDelay: 500
 });
 
+$(window).on('load', function() { // makes sure the whole site is loaded 
+            
+            $('.preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            
+          })
 </script>
 </body>
 </html>
