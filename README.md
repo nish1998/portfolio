@@ -1,3 +1,3 @@
 # portfolio
 Branch- gh-pages
-[open]https://nish1998.github.io/portfolio/
+https://nish1998.github.io/portfolio/
